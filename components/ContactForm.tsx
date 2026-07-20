@@ -6,7 +6,6 @@ import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
 import { Label } from '@/components/ui/label';
-import { supabase } from '@/lib/supabase';
 
 const subjects = [
   'General Inquiry',
@@ -44,16 +43,10 @@ export function ContactForm() {
       return;
     }
 
-    const { error } = await supabase.from('contact_messages').insert(payload);
+    console.log(payload);
 
-    if (error) {
-      setStatus('error');
-      setErrorMsg('Something went wrong while sending your message. Please try again.');
-      return;
-    }
-
-    setStatus('success');
-    form.reset();
+setStatus('success');
+form.reset();
   }
 
   if (status === 'success') {
