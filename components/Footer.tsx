@@ -128,13 +128,20 @@ export function Footer() {
               <li className="flex items-start gap-3">
                 <MapPin className="mt-0.5 h-4 w-4 shrink-0 text-brand-400" />
                 <span className="text-slate-400">
-                  120 Grace Avenue, Faith City, FC 90210
+                 NO 1, 5th Street,<br />
+  Kalam Nagar,<br />
+  Uthiramerur,<br />
+  Kanchipuram District,<br />
+  Tamil Nadu - 603406,<br />
+  India
                 </span>
               </li>
               <li className="flex items-start gap-3">
                 <Phone className="mt-0.5 h-4 w-4 shrink-0 text-brand-400" />
                 <a href="tel:+18005550199" className="text-slate-400 transition-colors hover:text-white">
-                  +1 (800) 555-0199
+                  <p>
+  Phone: +91 7299906126
+</p>
                 </a>
               </li>
               <li className="flex items-start gap-3">
@@ -143,7 +150,9 @@ export function Footer() {
                   href="mailto:hello@avojministries.org"
                   className="text-slate-400 transition-colors hover:text-white"
                 >
-                  hello@avojministries.org
+                  <p>
+  Email: jyesm126@gmail.com
+</p>
                 </a>
               </li>
               <li>

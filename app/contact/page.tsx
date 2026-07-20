@@ -6,40 +6,52 @@ import { Reveal } from '@/components/Reveal';
 import { ContactForm } from '@/components/ContactForm';
 
 const contactCards = [
-  {
-    icon: MapPin,
-    label: 'Visit Us',
-    primary: '120 Grace Avenue, Faith City, FC 90210',
-    secondary: 'Grace Avenue Campus',
-    href: 'https://maps.google.com/?q=120+Grace+Avenue',
-  },
+ {
+  icon: MapPin,
+  label: 'Visit Us',
+  primary: 'No 1, 5th Street, Kalamanagar, Uthiramerur',
+  secondary: 'Kanchipuram - 603406, Tamil Nadu',
+  href: 'https://maps.google.com/?q=No+1+5th+Street+Kalamanagar+Uthiramerur+Kanchipuram+603406',
+},
   {
     icon: Phone,
     label: 'Call Us',
-    primary: '+1 (800) 555-0199',
+    primary: '+91 7299906126',
     secondary: 'Mon&ndash;Fri, 9am &ndash; 5pm',
-    href: 'tel:+18005550199',
+   href: 'tel:+917299906126'
   },
   {
     icon: Mail,
     label: 'Email Us',
-    primary: 'hello@avojministries.org',
-    secondary: 'admissions@avojbiblecollege.edu',
-    href: 'mailto:hello@avojministries.org',
+    primary: 'jyesm126@gmail.com',
+    secondary: 'paulabishek100@gmail.com',
+    href: 'mailto:jyesm126@gmail.com',
   },
 ];
 
 const hours = [
-  { day: 'Sunday', time: '8:00 AM &ndash; 1:00 PM' },
-  { day: 'Monday &ndash; Friday', time: '9:00 AM &ndash; 5:00 PM' },
-  { day: 'Saturday', time: 'Prayer Hall open 24/7' },
+  { day: 'Sunday', time: 'Morning 6:00 AM &ndash; 8:00 AM' },
+  { day: 'Monday &ndash; Friday', time: 'Fasting Prayer 10:00 AM &ndash; 12:00 PM' },
+  { day: 'Every Tuesday', time: 'Gospel Prayer Meeting 6:00 PM &ndash; 8:00 PM (Andhra, Thiruvallur, Chennai, Kanchipuram)' },
+  { day: 'Saturday', time: 'Open All Time' },
 ];
 
 const socials = [
-  { name: 'Facebook', icon: Facebook, href: '#' },
-  { name: 'Twitter', icon: Twitter, href: '#' },
-  { name: 'Instagram', icon: Instagram, href: '#' },
-  { name: 'YouTube', icon: Youtube, href: '#' },
+  {
+    name: 'Facebook',
+    icon: Facebook,
+    href: 'https://www.facebook.com/estheryesm?mibextid=rS40aB7S9Ucbxw6v',
+  },
+  {
+    name: 'Instagram',
+    icon: Instagram,
+    href: 'https://www.instagram.com/alarming_voice_of_jesus?igsh=aGx2N21kdDZsNm0w',
+  },
+  {
+    name: 'YouTube',
+    icon: Youtube,
+    href: 'https://youtu.be/H8mg1GqK708?si=V2GnBnLXsOr0OkLH',
+  },
 ];
 
 export default function ContactPage() {
@@ -161,14 +173,14 @@ export default function ContactPage() {
                 <div className="relative">
                   <h3 className="font-display text-lg font-semibold">24/7 Prayer Line</h3>
                   <p className="mt-1.5 text-sm text-brand-100/85">
-                    Need prayer right now? Our prayer team is always available.
+                    Need prayer or spiritual support? Our prayer team is always available.
                   </p>
                   <a
-                    href="tel:+18005550199"
+                     href="tel:+917299906126"
                     className="mt-4 inline-flex items-center gap-2 rounded-full bg-white px-5 py-2.5 text-sm font-semibold text-brand-700 transition-transform hover:scale-105"
                   >
                     <Phone className="h-4 w-4" />
-                    +1 (800) 555-0199
+                   +91 7299906126
                   </a>
                 </div>
               </div>
@@ -189,16 +201,16 @@ export default function ContactPage() {
           </Reveal>
           <Reveal animation="scale-in" delay={150} className="mt-10">
             <div className="overflow-hidden rounded-3xl border border-slate-200 shadow-soft">
-              <iframe
-                title="AVOJ Ministries location map"
-                src="https://www.google.com/maps?q=120+Grace+Avenue&output=embed"
-                className="h-[28rem] w-full"
-                loading="lazy"
-                referrerPolicy="no-referrer-when-downgrade"
-                style={{ border: 0 }}
-                allowFullScreen
-              />
-            </div>
+  <iframe
+    title="AVOJ Ministries location map"
+    src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3893.2487822354587!2d79.7597547750707!3d12.631677587653313!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMTLCsDM3JzU0LjAiTiA3OcKwNDUnNDQuNCJF!5e0!3m2!1sen!2sin!4v1784531221000!5m2!1sen!2sin"
+    className="h-[28rem] w-full"
+    loading="lazy"
+    referrerPolicy="strict-origin-when-cross-origin"
+    style={{ border: 0 }}
+    allowFullScreen
+  ></iframe>
+</div>
           </Reveal>
         </div>
       </section>
