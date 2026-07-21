@@ -1,5 +1,6 @@
 import { PageShell } from '@/components/PageShell';
 import { HomeHero } from '@/components/home/HomeHero';
+import { HomeSlideshow } from '@/components/home/HomeSlideshow';
 import { HomeWelcome } from '@/components/home/HomeWelcome';
 import { HomeVisionMission } from '@/components/home/HomeVisionMission';
 import { HomeBibleVerse } from '@/components/home/HomeBibleVerse';
@@ -11,6 +12,7 @@ export default function Home() {
   return (
     <PageShell>
       <HomeHero />
+       <HomeSlideshow />
       <HomeWelcome />
       <HomeVisionMission />
       <HomeBibleVerse />
